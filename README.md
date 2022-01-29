@@ -1,2 +1,2 @@
 # snakesongs
-:musical_note: Apenas um simples tocador de músicas
+:musical_note: A Simple Music Player
