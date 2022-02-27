@@ -1,2 +1,2 @@
-# snakesongs
-:musical_note: A Simple Music Player
+# Snakesongs
+## :musical_note: A Simple Music Player
