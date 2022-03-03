@@ -1,3 +1,4 @@
 config_test.py
 __pycache__
 snake-env
+.env
