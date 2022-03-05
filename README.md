@@ -7,6 +7,12 @@ Create a virtual env
 $ python3 -m venv snake-venv
 ```
 
+Initialize venv
+
+```
+$ source snake-venv/bin/activate
+```
+
 Install requirements
 
 ```
