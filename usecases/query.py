@@ -3,6 +3,7 @@ import os
 
 from .mixer import mixer
 from .listener import Listener
+from .printer import Printer
 
 class Query(Listener):
  
