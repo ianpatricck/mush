@@ -1,16 +1,14 @@
-import sys
-from usecases import Printer, Listener, Query
+from usecases import Printer, Run
 
 Printer.main()
-Listener.initialPlay() if len(sys.argv) < 2 else None
 
 while True:
 
     args = input("=> ").lower()
 
-    query = Query(args) 
-    query.run()
+    run = Run(args)
+    run.run()
 
-    if (query.exitStatus != 0):
+    if (run.exitStatus != 0):
         print("\nGood bye :D\n")
         break
