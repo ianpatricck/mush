@@ -16,3 +16,14 @@ class Printer:
         print("Type 'help' to show options")
         print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
 
+    @abstractclassmethod
+    def help(self):
+        print("""
+
+        Commands:
+
+        - set [path]             | set a playlist folder
+        - play                   | just play initial song
+        - play [song]            | play a chosen song
+        """)
+
