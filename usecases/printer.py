@@ -24,6 +24,7 @@ class Printer:
 
         - play                   | just play initial song
         - play [song]            | play a chosen song
+        - play [id]              | play song by id
         - clear                  | clear screen
         - list                   | list all songs
         """)
