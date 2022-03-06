@@ -11,7 +11,18 @@ config = dotenv_values(".env")
 class Query(Listener):
  
     def play(self, song = None):
-        self.initialPlay() if (song == None or not song or "") else self.playSong(song)
+        if (song == None or not song or song == ""):
+            self.initialPlay()
+        
+        elif song.isnumeric():
+            musicId = int(song)
+            songs = os.listdir(config["songs"])
+            
+            for index, song in enumerate(songs, start=1):
+                if (musicId == index):
+                    self.playSong(song)
+        else:
+            self.playSong(song)
 
     def pause(self):
         print("\n[+] was paused\n")
