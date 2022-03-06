@@ -8,12 +8,15 @@ class Listener:
 
     @abstractclassmethod
     def initialPlay(self):
+
+        initialSong = config["initialSong"]
+
         try:
             mixer.init()
-            mixer.music.load(config["songs"] + config["initialSong"])
+            mixer.music.load(config["songs"] + initialSong)
             mixer.music.play()
 
-            print("\n[+] Listening {}\n".format(config["initialSong"]))
+            print(f"\n[+] Listening {initialSong}\n")
         except:
             print("\n[-] Music not placed in config.py or not found\n")
 
@@ -23,7 +26,7 @@ class Listener:
             mixer.music.load(config["songs"] + song)
             mixer.music.play()
 
-            print("\n[+] Listening {}\n".format(song))
+            print(f"\n[+] Listening {song}\n")
         except:
             print("\n[-] Music not found\n")
 
