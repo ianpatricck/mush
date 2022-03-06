@@ -1,4 +1,4 @@
-from dotenv import load_dotenv, dotenv_values
+from dotenv import dotenv_values
 from abc import abstractclassmethod
 from .mixer import mixer
 
@@ -16,4 +16,14 @@ class Listener:
             print("\n[+] Listening {}\n".format(config["initialSong"]))
         except:
             print("\n[-] Music not placed in config.py or not found\n")
+
+    def playSong(self, song):
+        try:
+            mixer.init()
+            mixer.music.load(config["songs"] + song)
+            mixer.music.play()
+
+            print("\n[+] Listening {}\n".format(song))
+        except:
+            print("\n[-] Music not found\n")
 
