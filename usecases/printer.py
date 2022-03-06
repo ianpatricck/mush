@@ -22,8 +22,9 @@ class Printer:
 
         Commands:
 
-        - set [path]             | set a playlist folder
         - play                   | just play initial song
         - play [song]            | play a chosen song
+        - clear                  | clear screen
+        - list                   | list all songs
         """)
 
