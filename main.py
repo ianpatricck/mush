@@ -4,7 +4,7 @@ Printer.main()
 
 while True:
 
-    args = input("=> ").lower()
+    args = input("=> ")
 
     run = Run(args)
     run.run()
