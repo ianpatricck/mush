@@ -1,7 +1,7 @@
-from usecases.query import Query
+from usecases.actions import Actions
 from usecases.printer import Printer
 
-class Run(Query):
+class Run(Actions):
 
     exitStatus = 0
     
