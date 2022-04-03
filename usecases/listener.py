@@ -1,3 +1,5 @@
+import os
+
 from dotenv import dotenv_values
 from abc import abstractclassmethod
 from .mixer import mixer
@@ -9,7 +11,13 @@ class Listener:
     @abstractclassmethod
     def initialPlay(self):
 
-        initialSong = config["initialSong"]
+        songs = os.listdir(config["songs"])
+
+        initialSong = None
+
+        for song in songs:
+            initialSong = song
+            break
 
         try:
             mixer.init()
