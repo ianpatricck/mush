@@ -1,12 +1,13 @@
 import platform
 import os
+import json
 
 from .mixer import mixer
 from .listener import Listener
 from .printer import Printer
-from dotenv import dotenv_values
 
-config = dotenv_values(".env")
+file = open("settings.json")
+config = json.load(file)
 
 class Actions(Listener):
  
