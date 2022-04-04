@@ -2,11 +2,11 @@ import platform
 import os
 import json
 
-from .mixer import mixer
+from .mixer import mixer, settings
 from .listener import Listener
 from .printer import Printer
 
-file = open("settings.json")
+file = open(settings)
 config = json.load(file)
 
 class Actions(Listener):

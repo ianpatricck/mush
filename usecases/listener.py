@@ -1,11 +1,10 @@
 import os
 import json
 
-from dotenv import dotenv_values
 from abc import abstractclassmethod
-from .mixer import mixer
+from .mixer import mixer, settings
 
-file = open("settings.json")
+file = open(settings)
 config = json.load(file)
 
 class Listener:
