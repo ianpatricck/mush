@@ -42,10 +42,20 @@ class Actions(Listener):
 
         Printer.main()
 
-    def listSongs(self):
+    def listSongs(self, param = None):
+
         songs = os.listdir(config["songs"])
 
-        for index, song in enumerate(songs, start=1):
-            print(index, song)
-        print("\n")
+        if (param == None or not param or param == ""):
 
+            for index, song in enumerate(songs, start=1):
+                print(index, song)
+            print("\n")
+        
+        elif (param != None and int(param)):
+            
+            for index, song in enumerate(songs, start=1):
+                print(index, song)
+                
+                if (index == int(param)):
+                    break
