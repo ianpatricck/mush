@@ -16,11 +16,11 @@ class Run(Actions):
             "resume": self.resume,
             "stop": self.stop,
             "clear": self.clear,
-            "list": self.listSongs
         }
 
         commandsWithArgs = {
-            "play": self.play
+            "play": self.play,
+            "list": self.listSongs
         }
 
         queryArgs = self.query.split(" ")
