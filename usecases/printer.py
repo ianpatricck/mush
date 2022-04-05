@@ -27,5 +27,6 @@ class Printer:
         - play [id]              | play song by id
         - clear                  | clear screen
         - list                   | list all songs
+        - list [id]              | list all songs until this id
         """)
 
