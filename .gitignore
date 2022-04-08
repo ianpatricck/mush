@@ -2,4 +2,4 @@ __pycache__
 snake-venv
 tasks.md
 settings.test.json
-usecases/mixer/__init__.py
+core/mixer/__init__.py
