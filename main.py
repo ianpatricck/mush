@@ -1,4 +1,4 @@
-from usecases import Printer, Run
+from core import Printer, Run
 
 Printer.main()
 
