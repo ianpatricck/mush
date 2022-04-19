@@ -1,5 +1,6 @@
 from core.actions import Actions
 from core.printer import Printer
+from .mixer import mixer
 
 class Run(Actions):
 
@@ -12,9 +13,9 @@ class Run(Actions):
 
         commands = {
             "help": Printer.help,
-            "pause": self.pause,
-            "resume": self.resume,
-            "stop": self.stop,
+            "pause": mixer.music.pause,
+            "resume": mixer.music.unpause,
+            "stop": mixer.music.stop,
             "clear": self.clear,
         }
 
