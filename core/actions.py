@@ -24,19 +24,7 @@ class Actions(Listener):
                     self.playSong(song)
         else:
             self.playSong(song)
-
-    def pause(self):
-        print("\n[+] was paused\n")
-        mixer.music.pause()
-    
-    def resume(self):
-        print("\n[+] listening\n")
-        mixer.music.unpause()
-    
-    def stop(self):
-        print("\n[+] stopped\n")
-        mixer.music.stop()
-
+ 
     def clear(self): 
         os.system("cls") if platform.system() == "Windows" else os.system("clear")
 
