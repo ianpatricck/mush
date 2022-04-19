@@ -28,5 +28,6 @@ class Printer:
         - clear                  | clear screen
         - list                   | list all songs
         - list [id]              | list all songs until this id
+        - search [something]     | Search music, artist and etc ...
         """)
 
