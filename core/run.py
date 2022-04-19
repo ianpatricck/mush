@@ -21,7 +21,8 @@ class Run(Actions):
 
         commandsWithArgs = {
             "play": self.play,
-            "list": self.listSongs
+            "list": self.listSongs,
+            "search": self.search
         }
 
         queryArgs = self.query.split(" ")
