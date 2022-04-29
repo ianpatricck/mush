@@ -32,21 +32,34 @@ class Actions(Listener):
 
     def listSongs(self, param = None):
 
-        songs = os.listdir(config["songs"])
+        songs = os.listdir(config["songs"]) 
+               
+        if param != None:
+           
+            if ('-' in param):
+                rangeIds = param.split("-")
+                
+                if (int(rangeIds[0]) and int(rangeIds[1])):
+                    firstId = int(rangeIds[0])
+                    lastId = int(rangeIds[1])
 
-        if (param == None or not param or param == ""):
+                    for i in range(len(songs)):
+                        if (i > firstId and i < lastId):
+                            print(i, songs[i])
+
+            elif (int(param)):
+
+                for index, song in enumerate(songs, start=1):
+                    print(index, song)
+
+                    if (index == int(param)):
+                        break
+
+        else:
 
             for index, song in enumerate(songs, start=1):
                 print(index, song)
             print("\n")
-
-        elif (param != None and int(param)):
-
-            for index, song in enumerate(songs, start=1):
-                print(index, song)
-
-                if (index == int(param)):
-                    break
 
     def search(self, song = None):
 

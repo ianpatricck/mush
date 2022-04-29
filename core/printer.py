@@ -22,12 +22,13 @@ class Printer:
 
         Commands:
 
-        - play                   | just play initial song
-        - play [song]            | play a chosen song
-        - play [id]              | play song by id
-        - clear                  | clear screen
-        - list                   | list all songs
-        - list [id]              | list all songs until this id
+        - play                   | Just play initial song
+        - play [song]            | Play a chosen song
+        - play [id]              | Play song by id
+        - clear                  | Clear screen
+        - list                   | List all songs
+        - list [id]              | List all songs until this id
+        - list [from-to]         | List all songs between IDs
         - search [something]     | Search music, artist and etc ...
         """)
 
