@@ -1,23 +1,27 @@
-# Snakesongs
-
-
-░█▀▀░█▀█░█▀█░█░█░█▀▀░█▀▀░█▀█░█▀█░█▀▀░█▀▀
-░▀▀█░█░█░█▀█░█▀▄░█▀▀░▀▀█░█░█░█░█░█░█░▀▀█
-░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀
-
+```
+ _   .-')                  .-')    ('-. .-.
+( '.( OO )_               ( OO ). ( OO )  /
+ ,--.   ,--.),--. ,--.   (_)---\_),--. ,--.
+ |   `.'   | |  | |  |   /    _ | |  | |  |
+ |         | |  | | .-') \  :` `. |   .|  |
+ |  |'.'|  | |  |_|( OO ) '..`''.)|       |
+ |  |   |  | |  | | `-' /.-._)   \|  .-.  |
+ |  |   |  |('  '-'(_.-' \       /|  | |  |
+ `--'   `--'  `-----'     `-----' `--' `--'
+```
 
 ## :musical_note: A Simple Music Player
 
 Create a virtual env
 
 ```
-$ python3 -m venv snake-venv
+$ python3 -m venv myvenv
 ```
 
 Initialize venv
 
 ```
-$ source snake-venv/bin/activate
+$ source myvenv/bin/activate
 ```
 
 Install requirements
