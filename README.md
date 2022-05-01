@@ -12,6 +12,7 @@
 
 ## :musical_note: A Simple Music Player
 
+- Change _settings.test.json_ to _settings.json_
 - Configure settings in ```settings.json```
 
 Create a virtual env
