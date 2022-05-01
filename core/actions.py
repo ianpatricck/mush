@@ -45,7 +45,7 @@ class Actions(Listener):
 
                     for i in range(len(songs)):
                         if (i > firstId and i < lastId):
-                            print(i, songs[i])
+                            print(i + 1, songs[i])
 
             elif (int(param)):
 
