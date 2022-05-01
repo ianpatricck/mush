@@ -12,6 +12,8 @@
 
 ## :musical_note: A Simple Music Player
 
+- Configure settings in ```settings.json```
+
 Create a virtual env
 
 ```
