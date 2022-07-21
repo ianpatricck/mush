@@ -2,13 +2,19 @@ from core import Printer, Run
 
 Printer.main()
 
-while True:
+exitMessage = "\nGood bye :D\n"
 
-    args = input("=> ")
+try:
 
-    run = Run(args)
-    run.run()
+    while True:
 
-    if (run.exitStatus != 0):
-        print("\nGood bye :D\n")
-        break
+        args = input("=> ")
+
+        run = Run(args)
+        run.run()
+
+        if (run.exitStatus != 0):
+            print(exitMessage)
+            break
+except:
+    print(exitMessage)
